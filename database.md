@@ -131,6 +131,7 @@ Each document represents the detailed information of uploaded asset (images for 
 
 ```json
 {
+  "user_id": "", // Id of the user who uploaded the asset.
   "asset_id": "2bed297e1c1e5d0a1f00108b5453f57b",
   "public_id": "givsea1ujnuixu74g1u1",
   "version": 1758313532,

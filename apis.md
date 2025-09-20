@@ -408,7 +408,7 @@ Content-Type: application/json
 
 ### 9. Image Upload API
 
-## POST `/upload`
+**POST** `/upload`
 
 Upload an image related to a complaint. The image will be uploaded to a third-party storage service (e.g., Cloudinary).  
 This API supports **upload progress tracking** on the client side. Only citizens can upload call this API.
