@@ -91,10 +91,27 @@ Authorization: Bearer <JWT_TOKEN>
 }
 ```
 
-- **401 Unauthorized**
+- **400 Bad Request**
+  When the requested OTP doesn't match with the actual OTP that was sent earlier.
 
 ```json
-{ "message": "Incorrect OTP" }
+{
+  "message": "Invalid OTP"
+}
+```
+
+- **410 Gone**
+  When the OTP is expired.
+
+```json
+{ "message": "OTP expired, please send another one." }
+```
+
+- **404 Not Found**
+  When the user / OTP is not found in database.
+
+```json
+{ "message": "User/OTP not found" }
 ```
 
 ---
